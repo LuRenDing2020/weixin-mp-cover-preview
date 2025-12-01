@@ -1,6 +1,6 @@
 import { Layout } from 'antd';
-import Headers from './pages/Headers'
-import Footers from './pages/Footers'
+import Headers from './pages/components/Headers'
+import Footers from './pages/components/Footers'
 import Index from './pages/Index'
 
 const { Content } = Layout;

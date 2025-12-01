@@ -1,6 +1,7 @@
 import { Layout, Typography } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 import './Headers.css'
-import OfficialAccountLogo from '../assets/official-accounts-logo.svg';
+import OfficialAccountLogo from '../../assets/official-accounts-logo.svg';
 
 const { Header } = Layout;
 const { Title } = Typography;
@@ -28,6 +29,25 @@ const Headers = () => {
           <img src={OfficialAccountLogo} alt="logo" style={{ height: '40px', marginRight: '20px' }} />
           <div style={{ width: '1px', height: '24px', backgroundColor: '#e8e8e8', marginRight: '20px' }} />
           <Title level={4} style={{ margin: 0 }}>封面预览工具</Title>
+          <a 
+            href="https://github.com/LuRenDing2020/weixin-mp-cover-preview" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ 
+              position: 'absolute',
+              right: '60px',
+              fontSize: '22px', 
+              color: '#171515',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '20px',
+              height: '20px',
+              borderRadius: '4px',
+            }}
+          >
+            <GithubOutlined />
+          </a>
         </div>
       </Header>
     </Layout>
